@@ -22,4 +22,3 @@ def rep(x):
 string = str(input("Please Enter A String: "))
 assert len(string)>=1
 print(rep(string))
-~                       
