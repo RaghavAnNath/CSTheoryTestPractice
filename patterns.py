@@ -35,6 +35,23 @@ def alpha_tri(n):
             print(chr(j), end='')
         print()
 
+#Pyramid Pattern
+
+def pyramid(n):
+    for i in range(1, n+1):
+        #To fill empty spaces to get triangle shape
+        for j in range(1, n-i+1):
+            print(" ", end='')
+        #For Forward Printing
+        for j in range(1,i+1):
+            print(j, end='')
+        #For Backward Printing
+        for j in range(i-1, 0,-1):
+            print(j, end='')
+        #To Print A Space After each line
+        print()
+
+
 #Driver Code
  
 righttriangle(n)
@@ -44,3 +61,6 @@ num_righttriangle(n)
 rect(n)
 
 alpha_tri(n)
+
+pyramid(n)
+                    
